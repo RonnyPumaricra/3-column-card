@@ -1,0 +1,33 @@
+.card-column {
+  background: var(--card-color, red);
+  color: var(--transparent-white);
+}
+
+.orange {
+  --card-color: hsl(31deg 77% 52%);
+}
+.cyan {
+  --card-color: hsl(184deg 100% 22%);
+}
+.dark-cyan {
+  --card-color: hsl(179deg 100% 13%);
+}
+
+.card-column button {
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 2px solid var(--very-light-gray);
+  /* Align left & bottom */
+  width: fit-content;
+  margin-top: auto;
+
+  background: var(--very-light-gray);
+  color: var(--card-color);
+  
+  
+}
+
+.card-column button:hover {
+  color: var(--very-light-gray);
+  background: var(--card-color);
+}

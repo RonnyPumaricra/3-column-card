@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.app-wrapper {
+  flex: 1;
+  padding: 15px;
+}
+
+.three-card-wrapper {
+  /* display: flex; */
+  max-width: 320px;
+  border-radius: 5px;
+  /* Respect the border-radius */
+  overflow: hidden;
+}
+
+.card-column {
+  flex: 1;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+@media screen and (min-width: 800px) {
+  .three-card-wrapper {
+    display: flex;
+    max-width: 920px;
+    border-radius: 10px;
+  }
+}
